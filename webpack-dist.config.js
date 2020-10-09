@@ -4,7 +4,9 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js'
+    filename: 'index.js',
+    library: 'SimpleTimeInputEngine',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [

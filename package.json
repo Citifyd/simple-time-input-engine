@@ -1,6 +1,6 @@
 {
   "name": "simple-time-input-engine",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "repository": "https://github.com/Citifyd/simple-time-input-engine.git",
   "author": "Guilherme Sehn <gui.s@citifyd.com>",
@@ -16,7 +16,7 @@
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
-    "build": "webpack --mode=production",
+    "build": "webpack --config webpack-dist.config.js --mode=production",
     "test": "webpack --config webpack-test.config.js --mode=development && mocha ./.test/index.js"
   },
   "standard": {
