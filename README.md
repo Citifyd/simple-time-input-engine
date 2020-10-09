@@ -24,7 +24,7 @@ console.log(time)  // "06:00"
 - The input (`newValue`) is flexible, you can pass different strings such as `06:00`, `6:30`, `630`, `630a`, `630p`, `6a`, `6p`, `6`, etc. If you pass an empty string, the result will be an empty string.
 - The previous input (`previousTime`) must be in 24-hour format, or an empty string.
 - If a non-supported time input is passed, it'll return an object `{ "valid": false }` with no `time` key.
-- `clockMode` is used for activating inference of the period of day based on the previous value. So if you pass `630` and the previous time is `13:00` (1pm), the new value will be `18:00` (6pm). If the previous time is `01:00` (1am), it will infer the new time as `06:00` (6am).
+- `clockMode` is used for activating inference of the period of day based on the previous value. So if you pass `630` and the previous time is `13:00` (1pm), the new value will be `18:30` (6:30pm). If the previous time is `01:00` (1am), it will infer the new time as `06:30` (6:30am).
 - This library assumes your implementation of the input field stores the time internally in 24-hour format, so `parseInputChange` will always return in 24-hour despite the `clockMode` passed. `clockMode` is only used for activating the period inference described above.
 
 ### `formatTimeForDisplay`
