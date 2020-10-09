@@ -1,6 +1,6 @@
 {
   "name": "simple-time-input-engine",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "repository": "https://github.com/Citifyd/simple-time-input-engine.git",
   "author": "Guilherme Sehn <gui.s@citifyd.com>",
