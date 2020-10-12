@@ -1,6 +1,6 @@
 # simple-time-input-engine
 
-Engine for implementing a time input field that accepts flexible inputs. It has support for 12 and 24 hours.
+Engine for implementing a time input field that accepts flexible inputs. It has support for 12 and 24 hours formats.
 
 ## Installation
 
@@ -42,3 +42,7 @@ console.log(formatTimeForDisplay({ time: '17:00', clockMode: 12 })) // "5:00pm"
 console.log(formatTimeForDisplay({ time: '05:00', clockMode: 24 })) // "05:00"
 console.log(formatTimeForDisplay({ time: '17:00', clockMode: 24 })) // "17:00"
 ```
+
+## Implementations
+
+- [React Simple Time Input](https://github.com/citifyd/react-simple-time-input)
